@@ -1,0 +1,206 @@
+/** @format */
+
+/* Importo una fuente que uso mas abajo*/
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+* {
+	box-sizing: border-box;
+	font-size: 1, 5vw;
+}
+
+body {
+	background-color: #f4d2d3;
+	color: #000000;
+	font-family: "Alata", sans-serif;
+	margin: auto;
+	padding: auto;
+}
+
+nav {
+	background-color: rgb(130, 198, 238);
+	margin: 0;
+	padding: 0;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+
+nav li {
+	display: inline;
+}
+
+nav a {
+	text-decoration: none;
+	font-size: 20px;
+	padding: 14px 16px;
+}
+
+nav a:hover {
+	background-color: cadetblue;
+	padding: 16px 16px;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.row img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+}
+
+.quienes-somos {
+	margin: 12px;
+	padding: 10px 15px;
+	background-color: rgb(130, 198, 238);
+	border-radius: 1em;
+}
+
+footer {
+	background-color: grey;
+	text-align: center;
+	color: #161481;
+	padding: 25px;
+	margin-top: 10px;
+}
+
+footer a {
+	color: #161481;
+	text-decoration: none;
+}
+
+.quienes-somos a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.tabla {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table,
+th,
+td {
+	border: 1px solid rgb(0, 0, 0);
+	border-collapse: collapse;
+	padding: 15px;
+	background-color: rgb(130, 198, 238);
+}
+
+main img {
+	height: 150px;
+	width: 150px;
+}
+
+/* The alert message box - BORRAR*/
+.alert {
+	padding: 20px;
+	background-color: #f44336; /* Red */
+	color: white;
+	margin-bottom: 15px;
+}
+
+iframe {
+	height: 250px;
+	width: 100%;
+	padding: 10px 15px;
+	align-items: center;
+	margin-left: auto; /* Automatic margin from left */
+	margin-right: auto; /* Automatic margin from right */
+}
+
+div.feria {
+	vertical-align: top;
+	display: inline-block;
+	/* To horizontally center images and caption */
+	text-align: center;
+	/* The width of the container also implies margin around the images. */
+	width: 20%;
+}
+.lugares {
+	/* Make the caption a block so it occupies its own line. */
+	display: block;
+}
+
+form {
+	background-color: rgb(130, 198, 238);
+	border-radius: 10px;
+	padding: 12px 12px;
+	margin: 12px 12px;
+}
+
+form label,
+form p {
+	font-size: 18px;
+	color: #161481;
+}
+
+form input {
+	width: 75%;
+	padding: 10px 10px;
+	margin: 6px;
+	border: 1px solid rgb(2, 62, 97);
+	border-radius: 14px;
+}
+
+form input:hover {
+	width: 75%;
+	padding: 10px 10px;
+	margin: 6px;
+	border-radius: 14px;
+	background-color: rgba(2, 62, 97, 0.274);
+}
+
+.formcontainer input,
+.botonenviar,
+.botonenviar:hover,
+.formcontainer input:hover {
+	width: auto;
+}
+
+header img {
+	height: auto;
+	width: 30%;
+}
+
+h1 {
+	font-size: 3vw;
+}
+
+@media screen and (max-width: 768px) {
+	nav ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: block;
+	}
+
+	nav li {
+		display: block;
+	}
+	nav a {
+		text-decoration: none;
+		font-size: 20px;
+		padding: 0;
+	}
+	nav a:hover {
+		background-color: cadetblue;
+		padding: 0;
+	}
+}
